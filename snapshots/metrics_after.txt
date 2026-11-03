@@ -1,0 +1,74 @@
+# Métricas (after) — 2026-11-02 19:36:43
+## uptime
+ 20:36:43 up 1 min,  0 users,  load average: 5.92, 2.34, 0.86
+
+## free -m
+		total        used        free      shared     buffers
+Mem:              439         430           9           0           3
+-/+ buffers/cache:            427          12
+Swap:             255          60         195
+
+## /proc/meminfo
+MemTotal:         449984 kB
+MemFree:            9276 kB
+MemAvailable:     175092 kB
+Buffers:            3248 kB
+Cached:           172620 kB
+SwapCached:         2704 kB
+Active:           152696 kB
+Inactive:         153472 kB
+Active(anon):      61264 kB
+Inactive(anon):    69888 kB
+Active(file):      91432 kB
+Inactive(file):    83584 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        262140 kB
+
+## ZRAM
+cat: /proc/swaps: Permission denied
+/sys/block/zram0/mm_stat: 
+/sys/block/zram0/disksize: 
+
+## top -n 1 -m 15
+[?25l[0m[H[J[s[999C[999B[6n[uTasks: 312 total,   6 running, 303 sleeping,   0 stopped,   0 zombie            
+Mem:    449984k total,   439856k used,    10128k free,     3044k buffers        
+Swap:   262140k total,    62616k used,   199524k free,   173640k cached         
+400%cpu  81%user   6%nice 183%sys 129%idle   0%iow   0%irq   0%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+  594 system       18  -2 1.1G  62M  47M S 83.3  14.1   0:37.98 system_server
+ 1890 shell        20   0 5.7M 1.9M 1.2M R 35.4   0.4   0:00.25 top -n 1 -m 15
+  983 u0_a29       -2   0 807M  78M  55M S 22.9  17.6   0:16.86 com.google.andr+
+ 1832 u0_a14       20   0 728M  36M  31M R 18.7   8.2   0:04.83 com.google.andr+
+  238 root         20   0    0    0    0 S 16.6   0.0   0:01.04 [kworker/u8:7]
+  325 system       -2  -8  45M 6.0M 4.4M S 14.5   1.3   0:07.00 surfaceflinger
+  234 root         -2   0    0    0    0 S 12.5   0.0   0:06.68 [mmcqd/0]
+   92 root         20   0    0    0    0 S 12.5   0.0   0:08.43 [kswapd0]
+  314 system       -3  -8  20M 3.0M 2.2M S  8.3   0.6   0:03.83 android.hardwar+
+  229 root         20   0    0    0    0 S  4.1   0.0   0:02.06 [kworker/u8:5]
+ 1710 u0_a19       20   0 734M  23M  20M S  2.0   5.1   0:00.21 com.google.andr+
+ 1524 u0_a13       20   0 758M  38M  34M S  2.0   8.7   0:03.28 com.google.andr+
+ 1393 system       20   0 721M  23M  21M S  2.0   5.2   0:00.20 com.google.andr+
+ 1339 u0_a11       20   0 736M  29M  26M S  2.0   6.6   0:01.36 com.google.andr+
+ 1297 u0_a28       20   0 714M  22M  20M S  2.0   4.9   0:00.18 com.android.man+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K
+## Pacotes habilitados (-e):       55
+## Pacotes Mobvoi/Ticwear:
+com.mobvoi.ticwatch.cmodel.e2
+
+# Amostra estabilizada — 2026-11-02 19:40:21
+ 19:40:21 up 5 min,  0 users,  load average: 3.16, 2.85, 1.38
+		total        used        free      shared     buffers
+Mem:              439         427          11           0           2
+-/+ buffers/cache:            425          14
+Swap:             255          70         185
+MemTotal:         449984 kB
+MemFree:           12276 kB
+MemAvailable:     173072 kB
+Buffers:            2544 kB
+Cached:           168108 kB
+SwapCached:         1308 kB
+        Config: ConnectionConfiguration[ mName=BLE, mAddress=null, mType=3, mRole=1, mEnabled=true, mIsConnected=true, mPeerNodeId=8d5c262c, mBtlePriority=true, mNodeId=8d5c262c]
+      Network: BLUETOOTH, connected=false
+      Network: PROXY, connected=false
+  NetworkAgentInfo{ ni{[type: PROXY[], state: CONNECTED/CONNECTED, reason: requested by system, extra: (none), failover: false, available: true, roaming: false]}  network{101}  nethandle{437197393933}  lp{{InterfaceName: lo LinkAddresses: []  Routes: [0.0.0.0/0 -> 127.0.0.1 lo,] DnsAddresses: [8.8.8.8,8.8.4.4,] UsePrivateDns: true PrivateDnsServerName: null Domains: null MTU: 0}}  nc{[ Transports: BLUETOOTH Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_SUSPENDED Unwanted:  LinkUpBandwidth>=80Kbps LinkDnBandwidth>=80Kbps]}  Score{55}  everValidated{true}  lastValidated{true}  created{true} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} clat{null} }
+  NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false]}  network{100}  lp{{InterfaceName: wlan0 LinkAddresses: [192.168.X.X/24] Routes: [0.0.0.0/0 -> 192.168.X.1 wlan0] DnsAddresses: [8.8.8.8]}}  nc{[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED SignalStrength: -54 SSID: "<REDACTED>"]}  Score{60}  everValidated{true}  lastValidated{true} }

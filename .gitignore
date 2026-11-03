@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Android / Gradle
+.gradle/
+build/
+*/build/
+app/build/
+local.properties
+*.apk
+*.aab
+captures/
+.idea/
+*.iml
+.cxx/
+
+# Logs & Binaries
+*.log
+logs/*.log
+logs/*.m4a
+logs/*.mp4
+logs/execution.log
+logs/settings_before.txt
+logs/ota_disabled_components.txt

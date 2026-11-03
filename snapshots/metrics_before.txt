@@ -1,0 +1,64 @@
+# Métricas (before) — 2026-11-02 19:32:46
+## uptime
+ 20:32:46 up 4 days,  4:27,  0 users,  load average: 3.01, 5.54, 5.24
+
+## free -m
+		total        used        free      shared     buffers
+Mem:              439         427          11           0           1
+-/+ buffers/cache:            426          13
+Swap:             255         110         145
+
+## /proc/meminfo
+MemTotal:         449984 kB
+MemFree:           11956 kB
+MemAvailable:     146500 kB
+Buffers:            1572 kB
+Cached:           149544 kB
+SwapCached:         1920 kB
+Active:           136324 kB
+Inactive:         130588 kB
+Active(anon):      60288 kB
+Inactive(anon):    63080 kB
+Active(file):      76036 kB
+Inactive(file):    67508 kB
+Unevictable:        6852 kB
+Mlocked:            6852 kB
+SwapTotal:        262140 kB
+
+## ZRAM
+cat: /proc/swaps: Permission denied
+/sys/block/zram0/mm_stat: 
+/sys/block/zram0/disksize: 
+
+## top -n 1 -m 15
+[?25l[0m[H[J[s[999C[999B[6n[uTasks: 298 total,   5 running, 291 sleeping,   0 stopped,   0 zombie            
+Mem:    449984k total,   439852k used,    10132k free,     1608k buffers        
+Swap:   262140k total,   113200k used,   148940k free,   149612k cached         
+400%cpu  10%user   0%nice  28%sys 360%idle   0%iow   0%irq   3%sirq   0%host    
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+30092 shell        20   0 5.7M 1.8M 1.2M R 35.0   0.4   0:00.21 top -n 1 -m 15
+    3 root         20   0    0    0    0 S  2.5   0.0   0:22.55 [ksoftirqd/0]
+30065 root         20   0    0    0    0 S  0.0   0.0   0:00.00 [kworker/1:1]
+29967 u0_a43       20   0 718M  15M  14M S  0.0   3.5   0:00.34 com.mobvoi.wear+
+29948 root         20   0    0    0    0 S  0.0   0.0   0:00.06 [kworker/0:1]
+29861 shell        20   0  12M 708K 496K S  0.0   0.1   0:00.17 adbd --root_sec+
+29506 system       20   0 718M  11M  10M S  0.0   2.4   0:00.39 com.mobvoi.wear+
+29466 u0_a17       20   0 801M  29M  19M S  0.0   6.6   0:15.27 com.android.ven+
+29076 root         18  -2    0    0    0 S  0.0   0.0   0:00.02 [wlan_logging_t+
+29075 root         19  -1    0    0    0 S  0.0   0.0   0:00.33 [VosRXThread]
+29074 root         19  -1    0    0    0 S  0.0   0.0   0:00.29 [VosTXThread]
+29073 root         18  -2    0    0    0 S  0.0   0.0   0:00.55 [VosMCThread]
+29070 root         17  -3    0    0    0 S  0.0   0.0   0:00.00 [VosWDThread]
+29043 wifi         20   0  10M 1.6M 1.4M S  0.0   0.3   0:00.56 wpa_supplicant +
+28976 bluetooth    20   0 750M  18M  14M S  0.0   4.0   0:08.65 com.android.blu+[?25h[0m[1000;1H[K[?25h[0m[1000;1H[K
+## Pacotes habilitados (-e):       65
+## Pacotes Mobvoi/Ticwear:
+com.mobvoi.companion.aw
+com.mobvoi.ticwatch.cmodel.e2
+com.mobvoi.wear.account.aw
+com.mobvoi.wear.appsservice
+com.mobvoi.wear.fitness.aw
+com.mobvoi.wear.health.aw
+com.mobvoi.wear.privacy.aw
+com.mobvoi.wear.system.aw
+com.mobvoi.wear.watchface.aw
